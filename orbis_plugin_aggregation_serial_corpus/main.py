@@ -1,12 +1,14 @@
+# -*- coding: utf-8 -*-
+
 import glob
 import os
-from orbis import app
+from orbis_eval import app
 
 
-class SerialCorpus(object):
+class Main(object):
 
     def __init__(self, rucksack, path=None):
-        super(SerialCorpus, self).__init__()
+        super(Main, self).__init__()
         self.rucksack = rucksack
         if not path:
             self.corpus_path = self.rucksack.open['config']['corpus_path']

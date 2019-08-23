@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 __name__ = "orbis_plugin_aggregation_serial_corpus"
-__version__ = "2.1.1"
+__version__ = "2.2"
 __author__ = "fabod"
 __year__ = "2019"
 __description__ = "The serial_corpus aggregation plugin for Orbis"

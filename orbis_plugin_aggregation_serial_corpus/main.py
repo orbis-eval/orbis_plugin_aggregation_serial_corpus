@@ -5,6 +5,10 @@ import os
 from orbis_eval import app
 
 
+import logging
+logger = logging.getLogger(__name__)
+
+
 class Main(object):
 
     def __init__(self, rucksack, path=None):
@@ -23,5 +27,5 @@ class Main(object):
                 with open(file_dir) as open_file:
                     corpus[file_number] = open_file.read()
             except Exception as exception:
-                app.logger.error(f"Corpus file empty: {file_dir} ({exception})")
+                logger.error(f"Corpus file empty: {file_dir} ({exception})")
         return corpus

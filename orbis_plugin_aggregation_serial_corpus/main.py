@@ -2,7 +2,7 @@
 
 import glob
 import os
-from orbis_eval import app
+from orbis_eval.core import app
 
 
 import logging
